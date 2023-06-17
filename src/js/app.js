@@ -1,11 +1,11 @@
+import GameFieldWidget from "./GameFieldWidget";
+import GameControl from "./GameControl";
+import PanelWidget from "./PanelWidget";
+
 // TODO: write code here
 
-// comment this to pass build
-const unusedVariable = "variable";
+const gameFieldWidget = new GameFieldWidget();
+const panelWidget = new PanelWidget();
+const gameControl = new GameControl(gameFieldWidget, panelWidget);
 
-// for demonstration purpose only
-export default function demo(value) {
-  return `Demo: ${value}`;
-}
-
-console.log("app.js included");
+gameControl.startGame();
