@@ -17,7 +17,7 @@ export default class GameControl {
 
     this.intId = setInterval(() => {
       this.releaseGoblin();
-    }, 1000);
+    }, 700);
 
     const btn = document.querySelector(".ctrl-panel-btn");
     btn.addEventListener("click", (event) => this.onBtnClick(event));
